@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy: #264653;
+    --color-teal: #2a9d8f;
+    --color-gold: #e9c46a;
+    --color-orange: #f4a261;
+    --color-tomato: #e76f51;
+  }
+
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+}
