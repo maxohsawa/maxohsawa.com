@@ -1,11 +1,11 @@
 import Navbar from '../../components/Navbar/Navbar';
-import './Home.css';
+import Experience from '../../components/Experience/Experience';
 
 function Home() {
   return (
-    <div class='home-div'>
+    <div class='home-div w-screen h-screen bg-slate-500 font-sans subpixel-antialiased text-slate-50'>
       <Navbar />
-      <h1>What's up what's up</h1>
+      <Experience />
     </div>
   );
 }
