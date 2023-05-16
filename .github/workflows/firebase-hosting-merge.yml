@@ -17,3 +17,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MAXOHSAWA_86509 }}'
           channelId: live
           projectId: maxohsawa-86509
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
