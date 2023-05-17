@@ -5,8 +5,9 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import Root from './routes/root'
-import About from './routes/about'
 import ErrorPage from './error-page'
+import About from './routes/about'
+import Skills from './routes/skills'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <About />
+      },
+      {
+        path: '/skills',
+        element: <Skills />
       }
     ]
   }
