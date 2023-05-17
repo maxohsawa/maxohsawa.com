@@ -1,10 +1,13 @@
+import Brand from './brand'
 import Navbar from './navbar'
 
 const Header = () => {
   return (
     <>
-      <div>Header</div>
-      <Navbar />
+      <header >
+        <Brand />
+        <Navbar />
+      </header>
     </>
   )
 }

@@ -58,7 +58,7 @@ const Navbar = () => {
                   : ""
                 }
             >
-              experience
+              Experience
             </NavLink>
           </li>
         </ul>
