@@ -8,6 +8,8 @@ import Root from './routes/root'
 import ErrorPage from './error-page'
 import About from './routes/about'
 import Skills from './routes/skills'
+import Projects from './routes/projects'
+import Experience from './routes/experience'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: '/skills',
         element: <Skills />
+      },
+      {
+        path: '/projects',
+        element: <Projects />
+      },
+      {
+        path: '/Experience',
+        element: <Experience />
       }
     ]
   }

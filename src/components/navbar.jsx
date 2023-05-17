@@ -33,6 +33,34 @@ const Navbar = () => {
               Skills
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to={'/projects'}
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "active"
+                  : isPending
+                  ? "pending"
+                  : ""
+                }
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to={'/experience'}
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "active"
+                  : isPending
+                  ? "pending"
+                  : ""
+                }
+            >
+              experience
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </>
