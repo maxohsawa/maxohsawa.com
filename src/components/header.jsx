@@ -1,13 +1,21 @@
+import { styled } from 'styled-components'
 import Brand from './brand'
 import Navbar from './navbar'
 
 const Header = () => {
+
+  const HeaderContainer = styled.header`
+    display: flex;
+    height: 10vh;
+    width: auto;
+  `
+
   return (
     <>
-      <header >
+      <HeaderContainer >
         <Brand />
         <Navbar />
-      </header>
+      </HeaderContainer>
     </>
   )
 }
