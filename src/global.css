@@ -19,6 +19,32 @@
   font-style: normal;
 }
 
+:root {
+  --bg-primary: #c9c1ab;
+  --primary: #3b3737;
+  --secondary: #787267;
+  --tertiary: #8d8882;
+  --quarternary: #6c644c;
+}
+
 body {
+  background-color: var(--bg-primary);
   font-family: 'Inter';
+  color: var(--primary);
+  padding: 10px;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a.active {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+li {
+  list-style-type: none;
 }

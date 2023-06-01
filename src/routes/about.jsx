@@ -2,7 +2,7 @@ const About = () => {
   return (
     <>
       <main>
-        <h1>About</h1>
+        
         <figure>
             <img src='/profile.jpg' />
             <figcaption>

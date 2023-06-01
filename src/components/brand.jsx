@@ -15,7 +15,7 @@ const Brand = () => {
     <>
       <ProfileContainer>
         
-        <Name>Max Ohsawa</Name>
+        <Name>&gt;_ Max Ohsawa</Name>
       </ProfileContainer>
     </>
   )
