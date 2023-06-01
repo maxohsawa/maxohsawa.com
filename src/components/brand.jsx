@@ -7,7 +7,8 @@ const Brand = () => {
   `
 
   const Name = styled.span`
-    
+    font-size: 2.2rem;
+    font-weight: bold;
   `
 
   return (
