@@ -20,11 +20,14 @@
 }
 
 :root {
-  --bg-primary: #c9c1ab;
-  --primary: #3b3737;
-  --secondary: #787267;
-  --tertiary: #8d8882;
-  --quarternary: #6c644c;
+  --bg-primary: #C8C1A9;
+  --primary: #353237;
+  --secondary: #7B766C;
+  --tertiary: #ABA597;
+  --quarternary: #C6BDA7;
+  --neu-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), 6px 6px 16px rgba(53, 50, 55, 0.5);
+  --neu-inactive: -2px -2px 8px rgba(255, 255, 255, 0.5), 2px 2px 8px rgba(53, 50, 55, 0.5);
+  
 }
 
 body {
@@ -37,14 +40,30 @@ body {
 a, a:link, a:visited, a:hover, a:active {
   color: var(--primary);
   text-decoration: none;
+  padding: 4px 6px;
+  margin-right: 2px;
 }
 
 a.active {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
+  box-shadow: var(--neu-shadow);
+  border-radius: 18px;
+}
 
+a.inactive {
+  box-shadow: var(--neu-inactive);
+  border-radius: 18px;
 }
 
 li {
   list-style-type: none;
+}
+
+.neu-shadow {
+  box-shadow: var(--neu-shadow);
+}
+
+.neu-inactive {
+  box-shadow: var(--neu-inactive);
 }

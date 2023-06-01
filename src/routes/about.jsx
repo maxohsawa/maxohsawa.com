@@ -21,7 +21,7 @@ const About = () => {
       <main>
         
         <ProfileFigure>
-            <ProfileImage src='/profile.jpg' />
+            <ProfileImage src='/profile.jpg' className="neu-shadow"/>
             <ProfileCaption>
               brand image of the developer Max Ohsawa, consisting of a profile image and a border
             </ProfileCaption>

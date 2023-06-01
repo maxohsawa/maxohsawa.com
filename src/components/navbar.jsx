@@ -27,15 +27,14 @@ const links = [
 const NavList = styled.ul`
   display: flex;
   flex-direction: row;
-  flex-basis: 1;
   justify-content: flex-start;
   align-items: center;
+  padding-inline-start: 0px;
 `
 
 const NavListItem = styled.li`
   display: flex;
   justify-content: center;
-  margin-right: 1rem;
 `
 
 const Navbar = () => {
@@ -53,7 +52,7 @@ const Navbar = () => {
                       ? "active"
                       : isPending
                       ? "pending"
-                      : ""
+                      : "inactive"
                     }
                 >
                   {text}
