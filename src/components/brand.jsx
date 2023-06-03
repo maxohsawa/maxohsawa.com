@@ -4,23 +4,24 @@ const Brand = () => {
 
   const ProfileContainer = styled.div`
     width: 100vw;
-  `
-
-  const Prefix = styled.span`
-    color: var(--secondary);
-    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    
   `
 
   const Name = styled.span`
     font-size: 2.2rem;
     font-weight: bold;
+
+    @media (min-width: 1025px) {
+      font-size: 3rem;
+    }
   `
 
   return (
     <>
       <ProfileContainer>
-        
-        <Name><Prefix>&gt;_ </Prefix>Max Ohsawa</Name>
+        <Name>Max Ohsawa</Name>
       </ProfileContainer>
     </>
   )

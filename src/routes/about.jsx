@@ -3,6 +3,7 @@ import { styled } from 'styled-components'
 const ProfileFigure = styled.figure`
   display: flex;
   justify-content: center;
+  
 `
 
 const ProfileImage = styled.img`

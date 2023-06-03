@@ -30,12 +30,35 @@ const NavList = styled.ul`
   justify-content: space-evenly;
   align-items: center;
   padding-inline-start: 0px;
+
+  @media screen and (min-width: 769px) {
+    padding: 0 10vw;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding: 0 15vw;
+  }
+
+  @media screen and (min-width: 1201px) {
+    padding: 0 20vw;
+  }
 `
 
 const NavListItem = styled.li`
   display: flex;
   justify-content: center;
-  
+  min-width: 4rem;
+
+  @media screen and (min-width: 481px) {
+    min-width: 6rem;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (min-width: 769px) {
+    min-width: 8rem;
+    font-size: 1.4rem;
+  }
+
 `
 
 // https://reactrouter.com/en/main/start/tutorial#active-link-styling

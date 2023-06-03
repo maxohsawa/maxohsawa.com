@@ -46,13 +46,12 @@ body {
 a, a:link, a:visited, a:hover, a:active {
   color: var(--primary);
   text-decoration: none;
-  padding: 4px 8px;
+  padding: 8px 12px;
   text-align: center;
-  min-width: 4rem;
+  width: 100%
 }
 
 a.active {
-  font-size: 1rem;
   font-weight: bold;
   box-shadow: var(--neu-shadow);
   border-radius: 18px;
