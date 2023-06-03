@@ -25,9 +25,15 @@
   --secondary: #7B766C;
   --tertiary: #ABA597;
   --quarternary: #C6BDA7;
-  --neu-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), 6px 6px 16px rgba(53, 50, 55, 0.5);
-  --neu-inactive: -2px -2px 8px rgba(255, 255, 255, 0.5), 2px 2px 8px rgba(53, 50, 55, 0.5);
-  
+  --neu-shadow: -6px -6px 8px rgba(239, 237, 230, 0.5), 6px 6px 8px rgba(53, 50, 55, 0.5);
+  --neu-inactive: -1px -1px 4px rgba(239, 255, 255, 0.5), 1px 1px 4px rgba(53, 50, 55, 0.5);
+  --neu-border: 2px solid rgba(123, 118, 108, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -40,8 +46,9 @@ body {
 a, a:link, a:visited, a:hover, a:active {
   color: var(--primary);
   text-decoration: none;
-  padding: 4px 6px;
-  margin-right: 2px;
+  padding: 4px 8px;
+  text-align: center;
+  min-width: 4rem;
 }
 
 a.active {
@@ -66,4 +73,8 @@ li {
 
 .neu-inactive {
   box-shadow: var(--neu-inactive);
+}
+
+.neu-border {
+  border: var(--neu-border);
 }

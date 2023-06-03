@@ -17,17 +17,17 @@ const links = [
   {
     text: 'Experience',
     path: '/experience'
-  },
-  {
-    text: 'Contact',
-    path: '/contact'
   }
-]
+];
+
+const NavContainer = styled.nav`
+  margin-top: 20px;
+`
 
 const NavList = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   padding-inline-start: 0px;
 `
@@ -35,12 +35,15 @@ const NavList = styled.ul`
 const NavListItem = styled.li`
   display: flex;
   justify-content: center;
+  
 `
+
+// https://reactrouter.com/en/main/start/tutorial#active-link-styling
 
 const Navbar = () => {
   return (
     <>
-      <nav>
+      <NavContainer>
         <NavList>
           {links && links.map(({text, path}, index) => {
             return (
@@ -61,7 +64,7 @@ const Navbar = () => {
             )
           })}
         </NavList>
-      </nav>
+      </NavContainer>
     </>
   )
 }

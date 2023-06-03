@@ -9,6 +9,8 @@ const Header = () => {
     flex-direction: column;
     height: 10vh;
     width: auto;
+    margin: 10px 0 30px 0;
+    
   `
 
   return (

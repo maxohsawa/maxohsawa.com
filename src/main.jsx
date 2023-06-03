@@ -13,7 +13,6 @@ import About from './routes/about'
 import Skills from './routes/skills'
 import Projects from './routes/projects'
 import Experience from './routes/experience'
-import Contact from './routes/contact'
 
 const router = createBrowserRouter([
   {
@@ -36,10 +35,6 @@ const router = createBrowserRouter([
       {
         path: '/experience',
         element: <Experience />
-      },
-      {
-        path: '/contact',
-        element: <Contact />
       }
     ]
   }
