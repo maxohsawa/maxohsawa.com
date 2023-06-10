@@ -19,15 +19,12 @@ const ProfileCaption = styled.figcaption`
 const About = () => {
   return (
     <>
-      <main>
-        
         <ProfileFigure>
             <ProfileImage src='/profile.jpg' className="neu-shadow"/>
             <ProfileCaption>
               brand image of the developer Max Ohsawa, consisting of a profile image and a border
             </ProfileCaption>
           </ProfileFigure>
-      </main>
     </>
   )
 }

@@ -9,6 +9,6 @@
 `npm run dev`
 
 ## Tech Used
-- Vite with JavaScript, React, SWC
+- Vite, React, JavaScript + SWC
 - styled-components with babel
 - react-router
