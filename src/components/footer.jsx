@@ -58,7 +58,7 @@ const Footer = () => {
             return (
               <Logo 
                 key={`logo${index}`}
-                className="neu-shadow"
+                className="neu-less"
               >
                 <a href={link.url}>
                   <LogoImage src={link.imgSrc} />

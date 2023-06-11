@@ -20,7 +20,7 @@ const About = () => {
   return (
     <>
         <ProfileFigure>
-            <ProfileImage src='/profile.jpg' className="neu-shadow"/>
+            <ProfileImage src='/profile.jpg' className="neu-less"/>
             <ProfileCaption>
               brand image of the developer Max Ohsawa, consisting of a profile image and a border
             </ProfileCaption>

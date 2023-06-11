@@ -26,7 +26,7 @@
   --tertiary: #ABA597;
   --quarternary: #C6BDA7;
   --neu-shadow: -6px -6px 8px rgba(239, 237, 230, 0.5), 6px 6px 8px rgba(53, 50, 55, 0.5);
-  --neu-inactive: -1px -1px 4px rgba(239, 255, 255, 0.5), 1px 1px 4px rgba(53, 50, 55, 0.5);
+  --neu-less: -1px -1px 4px rgba(239, 255, 255, 0.5), 1px 1px 4px rgba(53, 50, 55, 0.5);
   --neu-border: 2px solid rgba(123, 118, 108, 0.2);
 }
 
@@ -58,7 +58,7 @@ a.active {
 }
 
 a.inactive {
-  box-shadow: var(--neu-inactive);
+  box-shadow: var(--neu-less);
   border-radius: 18px;
 }
 
@@ -70,8 +70,8 @@ li {
   box-shadow: var(--neu-shadow);
 }
 
-.neu-inactive {
-  box-shadow: var(--neu-inactive);
+.neu-less {
+  box-shadow: var(--neu-less);
 }
 
 .neu-border {
