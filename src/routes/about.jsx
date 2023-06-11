@@ -73,7 +73,8 @@ const About = () => {
                 className="active"
                 style={
                   {
-                    width: "60vw"
+                    width: "60vw",
+                    padding: "15px"
                   }
                 }
                 >
