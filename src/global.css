@@ -77,3 +77,15 @@ li {
 .neu-border {
   border: var(--neu-border);
 }
+
+.sub-heading {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.copy {
+  margin: 10px 0;
+  width: auto;
+  font-size: 1.2rem;
+}

@@ -10,7 +10,7 @@ const Brand = () => {
   `
 
   const Name = styled.span`
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: bold;
 
     @media (min-width: 1025px) {

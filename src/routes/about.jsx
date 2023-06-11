@@ -24,7 +24,7 @@ const CopyContainer = styled.div`
   flex-direction: column;
 `
 const Greeting = styled.p`
-  margin: 10px 0;
+  margin-bottom: 10px;
   font-size: 1.6rem;
   font-weight: bold;
 `
@@ -32,6 +32,7 @@ const Greeting = styled.p`
 const Copy = styled.p`
   margin: 10px 0;
   width: auto;
+  font-size: 1.2rem;
 `
 
 const CTA = styled.div`
@@ -74,7 +75,8 @@ const About = () => {
                 style={
                   {
                     width: "60vw",
-                    padding: "15px"
+                    padding: "15px",
+                    fontSize: "1.2rem"
                   }
                 }
                 >
