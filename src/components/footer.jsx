@@ -1,8 +1,9 @@
 import { styled } from 'styled-components'
 
-const Section = styled.section`
+const Section = styled.footer`
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 `
 
 const ContactContainer = styled.div`

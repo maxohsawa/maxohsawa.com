@@ -5,6 +5,10 @@ import Footer from '../components/footer'
 
 const Main = styled.main`
   min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
 `
 
 const Root = () => {
