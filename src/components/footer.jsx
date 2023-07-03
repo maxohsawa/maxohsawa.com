@@ -1,4 +1,7 @@
 import { styled } from 'styled-components'
+import LinkedInLogo from '../assets/logos/linkedin.svg'
+import GithubLogo from '../assets/logos/github.svg'
+import TwitterLogo from '../assets/logos/twitter.svg'
 
 const Section = styled.footer`
   height: 15vh;
@@ -39,15 +42,15 @@ const CopyrightContainer = styled.div`
 
 const links = [
   {
-    imgSrc: "/linkedin.svg",
+    imgSrc: LinkedInLogo,
     url: "https://www.linkedin.com/in/maxohsawa"
   },
   {
-    imgSrc: "/github.svg",
+    imgSrc: GithubLogo,
     url: "https://www.github.com/maxohsawa"
   },
   {
-    imgSrc: "/twitter.svg",
+    imgSrc: TwitterLogo,
     url: "https://www.twitter.com/maxohsawa"
   },
 ]

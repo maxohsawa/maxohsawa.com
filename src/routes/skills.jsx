@@ -1,22 +1,22 @@
 import CTA from '../components/CTA'
 import { styled } from 'styled-components'
-import ReactLogo from '../../public/react.svg'
-import JavaScriptLogo from '../../public/javascript.svg'
-import ChakraLogo from '../../public/chakra-ui.svg'
-import HTMLLogo from '../../public/html5.svg'
-import CSSLogo from '../../public/css3.svg'
-import NodeLogo from '../../public/nodejs.svg'
-import ExpressLogo from '../../public/expressjs.svg'
-import NextLogo from '../../public/nextjs.svg'
-import JWTLogo from '../../public/jwt.svg'
-import MySQLLogo from '../../public/mysql.svg'
-import SequelizeLogo from '../../public/sequelize.svg'
-import MongoDBLogo from '../../public/mongodb.svg'
-import MongooseLogo from '../../public/mongoose.png'
-import PythonLogo from '../../public/python.svg'
-import JavaLogo from '../../public/java.svg'
-import CPPLogo from '../../public/C++.svg'
-import GitLogo from '../../public/git.svg'
+import ReactLogo from '../assets/logos/react.svg'
+import JavaScriptLogo from '../assets/logos/javascript.svg'
+import ChakraLogo from '../assets/logos/chakra-ui.svg'
+import HTMLLogo from '../assets/logos/html5.svg'
+import CSSLogo from '../assets/logos/css3.svg'
+import NodeLogo from '../assets/logos/nodejs.svg'
+import ExpressLogo from '../assets/logos/expressjs.svg'
+import NextLogo from '../assets/logos/nextjs.svg'
+import JWTLogo from '../assets/logos/jwt.svg'
+import MySQLLogo from '../assets/logos/mysql.svg'
+import SequelizeLogo from '../assets/logos/sequelize.svg'
+import MongoDBLogo from '../assets/logos/mongodb.svg'
+import MongooseLogo from '../assets/logos/mongoose.png'
+import PythonLogo from '../assets/logos/python.svg'
+import JavaLogo from '../assets/logos/java.svg'
+import CPPLogo from '../assets/logos/C++.svg'
+import GitLogo from '../assets/logos/git.svg'
 
 const CopyContainer = styled.div`
   padding: 10px 20px;
@@ -37,7 +37,7 @@ const Copy = styled.p`
 
 const LogosContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 `
 
@@ -160,11 +160,13 @@ const Skills = () => {
             <Logo src={GitLogo} />
           </LogoContainer>
         </LogosContainer>
+      </CopyContainer>
+      <CopyContainer>
         <Copy>
-          Come check out some of the projects I've been working on!
+          Check out some of the projects I've been working on!
         </Copy>
       </CopyContainer>
-      <CTA path={'/projects'} name={'Projects'} />
+      <CTA path='/projects' name='Projects' />
     </>
   )
 }

@@ -70,7 +70,7 @@ const Navbar = () => {
         <NavList>
           {links && links.map(({text, path}, index) => {
             return (
-              <NavListItem>
+              <NavListItem key={`navlink${index}`}>
                 <NavLink
                   to={path}
                   className={({ isActive, isPending }) =>

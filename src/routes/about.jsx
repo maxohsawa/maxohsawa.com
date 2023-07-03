@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import CTA from '../components/CTA'
+import ProfileJpg from '../assets/profile/profile.jpg'
 
 const ProfileFigure = styled.figure`
   display: flex;
@@ -39,7 +40,7 @@ const About = () => {
   return (
     <>
         <ProfileFigure>
-            <ProfileImage src='/profile.jpg' className="neu-less"/>
+            <ProfileImage src={ProfileJpg} className="neu-less"/>
             <ProfileCaption>
               brand image of the developer Max Ohsawa, consisting of a profile image and a border
             </ProfileCaption>
