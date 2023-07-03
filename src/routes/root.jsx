@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom'
 import { styled } from 'styled-components'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import ScrollToTop from '../components/ScrollToTop'
 
 const Main = styled.main`
   min-height: 65vh;
@@ -14,6 +15,7 @@ const Main = styled.main`
 const Root = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Main>
         <Outlet />
