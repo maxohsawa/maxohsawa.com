@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom'
 import { styled } from 'styled-components'
+import CTA from '../components/CTA'
 
 const ProfileFigure = styled.figure`
   display: flex;
@@ -35,18 +35,6 @@ const Copy = styled.p`
   font-size: 1.2rem;
 `
 
-const CTA = styled.div`
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-  width: 60vw;
-`
-
-const NavLinkItem = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
 const About = () => {
   return (
     <>
@@ -67,23 +55,7 @@ const About = () => {
               Come along and check out what web technologies I like working with!
             </Copy>
           </CopyContainer>
-          <CTA>
-            <NavLinkItem>
-              <NavLink 
-                to="/skills"
-                className="active"
-                style={
-                  {
-                    width: "60vw",
-                    padding: "15px",
-                    fontSize: "1.2rem"
-                  }
-                }
-                >
-                Skills
-              </NavLink>
-            </NavLinkItem>
-          </CTA>
+          <CTA path='/skills' name='Skills' />
     </>
   )
 }
