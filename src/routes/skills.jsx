@@ -22,10 +22,11 @@ const CopyContainer = styled.div`
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `
 
 const CopyHeader = styled.h2`
-
+  margin-bottom: 20px;
 `
 
 const Copy = styled.p`
@@ -42,16 +43,26 @@ const LogosContainer = styled.div`
 `
 
 const LogoContainer = styled.div`
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 80px;
+  border-radius: 8px;
+  margin: 0 10px 30px 0;
+  background-color: rgba(255, 255, 255, 0.3);
 `
   
-  const Logo = styled.img`
+const Logo = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 12px;
+`
+
+const Label = styled.p`
+  font-size: 0.7rem;
+  margin-top: 4px;
 `
 
 const Skills = () => {
@@ -59,105 +70,92 @@ const Skills = () => {
     <>
       <CopyContainer>
         <CopyHeader>
-          Front End Technologies:
+          Front End Technologies
         </CopyHeader>
-        <Copy>
-          React, JavaScript, Chakra UI, HTML, CSS
-        </Copy>
         <LogosContainer>
           <LogoContainer>
-            <Logo src={ReactLogo} />
+            <Logo src={ReactLogo} alt='react' />
+            <Label>React</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={JavaScriptLogo} />
-          </LogoContainer>
-          <LogoContainer style={{ 
-            backgroundColor: 'white', 
-            width: '48px', 
-            height: '48px',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            <Logo src={ChakraLogo} />
+            <Logo src={JavaScriptLogo} alt='javascript' />
+            <Label>JavaScript</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={HTMLLogo} />
+            <Logo src={ChakraLogo} alt='chakra ui' />
+            <Label>Chakra UI</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={CSSLogo} />
+            <Logo src={HTMLLogo} alt='html' />
+            <Label>HTML 5</Label>
+          </LogoContainer>
+          <LogoContainer>
+            <Logo src={CSSLogo} alt='css' />
+            <Label>CSS 3</Label>
           </LogoContainer>
         </LogosContainer>
         <CopyHeader>
-          Backend Technologies:
+          Backend Technologies
         </CopyHeader>
-        <Copy>
-          Node.js, Express.js, Next.js, JWT
-        </Copy>
         <LogosContainer>
-          <LogoContainer style={{
-            backgroundColor: 'white'
-          }}>
-            <Logo src={NodeLogo} />
+          <LogoContainer>
+            <Logo src={NodeLogo} alt='node.js' />
+            <Label>Node.js</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={ExpressLogo} />
+            <Logo src={ExpressLogo} alt='express.js' />
+            <Label>Express.js</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={NextLogo} />
+            <Logo src={NextLogo} alt='next.js' />
+            <Label>Next.js</Label>
           </LogoContainer>
-          <LogoContainer style={{
-            width: 'auto'
-          }}>
-            <Logo src={JWTLogo} style={{
-              width: 'auto'
-            }} />
+          <LogoContainer>
+            <Logo src={JWTLogo} alt='json web tokens' />
+            <Label>JWT</Label>
           </LogoContainer>
         </LogosContainer>
         <CopyHeader>
-          Databases and ORMs/ODMs:
+          Databases and ORMs/ODMs
         </CopyHeader>
-        <Copy>
-          SQL, MySQL, Sequelize, NoSQL, MongoDB, Mongoose
-        </Copy>
         <LogosContainer>
           <LogoContainer>
-            <Logo src={MySQLLogo} />
+            <Logo src={MySQLLogo} alt='mysql' />
+            <Label>MySQL</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={SequelizeLogo} />
+            <Logo src={SequelizeLogo} alt='sequelize' />
+            <Label>Sequelize</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={MongoDBLogo} />
+            <Logo src={MongoDBLogo} alt='mongodb' />
+            <Label>MongoDB</Label>
           </LogoContainer>
-          <LogoContainer style={{
-            width: '100px',
-            height: 'auto'
-          }}>
-            <Logo src={MongooseLogo} style={{
-              width: '100px',
-              height: 'auto'
-            }} />
+          <LogoContainer>
+            <Logo src={MongooseLogo} alt='mongoose' />
+            <Label>Mongoose</Label>
           </LogoContainer>
+          
         </LogosContainer>
         <CopyHeader>
-          Other:
+          Other
         </CopyHeader>
-        <Copy>
-          Python, Java, C++, Git
-        </Copy>
         <LogosContainer>
           <LogoContainer>
-            <Logo src={PythonLogo} />
+            <Logo src={PythonLogo} alt='python' />
+            <Label>Python</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={JavaLogo} />
+            <Logo src={JavaLogo} alt='java' />
+            <Label>Java</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={CPPLogo} />
+            <Logo src={CPPLogo} alt='c++' />
+            <Label>C++</Label>
           </LogoContainer>
           <LogoContainer>
-            <Logo src={GitLogo} />
+            <Logo src={GitLogo} alt='git' />
+            <Label>Git</Label>
           </LogoContainer>
         </LogosContainer>
       </CopyContainer>

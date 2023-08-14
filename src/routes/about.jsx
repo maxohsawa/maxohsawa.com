@@ -10,7 +10,7 @@ const ProfileFigure = styled.figure`
 `
 
 const ProfileImage = styled.img`
-  border-radius: 100%;
+  border-radius: 25px;
   width: auto;
   height: 25vh;
 `
