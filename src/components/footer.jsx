@@ -2,6 +2,7 @@ import { styled } from 'styled-components'
 import LinkedInLogo from '../assets/logos/linkedin.svg'
 import GithubLogo from '../assets/logos/github.svg'
 import TwitterLogo from '../assets/logos/twitter.svg'
+import DiscordLogo from '../assets/logos/discord.svg'
 
 const Section = styled.footer`
   height: 15vh;
@@ -52,6 +53,10 @@ const links = [
   {
     imgSrc: TwitterLogo,
     url: "https://www.twitter.com/maxohsawa"
+  },
+  {
+    imgSrc: DiscordLogo,
+    url: "https://www.discordapp.com/users/1032759681174753290"
   },
 ]
 
