@@ -5,6 +5,7 @@ import ColumbiaLogo from '../assets/logos/columbia-engineering.svg'
 import MITLogo from '../assets/logos/mit.svg'
 import BrooklynCollegeLogo from '../assets/logos/brooklyn-college.svg'
 import HarvardLogo from '../assets/logos/harvard.svg'
+import StanfordLogo from '../assets/logos/stanford.svg'
 
 const ProfileFigure = styled.figure`
   display: flex;
@@ -51,6 +52,7 @@ const Logo = styled.div`
   justify-content: center;
   align-items: center;
   width: 10vw;
+  max-width: 70px;
   height: auto;
   margin: 10px;
 `
@@ -90,7 +92,7 @@ const About = () => {
                 <LogoImage src={ColumbiaLogo}/>
               </Logo>
               <LearningCopy>
-                I currently teach with Columbia University Engineering Bootcamps in partnership with EdX
+                Currently teach with Columbia University Engineering Bootcamps in partnership with EdX
               </LearningCopy>
             </LearningRow>
             <LearningRow>
@@ -98,7 +100,7 @@ const About = () => {
                 <LogoImage src={MITLogo}/>
               </Logo>
               <LearningCopy>
-                I hold a professional MERN Full Stack Development certification from MIT xPRO
+                Holds a professional MERN Full Stack Development certification from MIT xPRO
               </LearningCopy>
             </LearningRow>
             <LearningRow>
@@ -106,7 +108,7 @@ const About = () => {
                 <LogoImage src={BrooklynCollegeLogo}/>
               </Logo>
               <LearningCopy>
-                I earned a BS with honors in Computer Science from Brooklyn College
+                Earned a BS with honors in Computer Science from Brooklyn College
               </LearningCopy>
             </LearningRow>
             <LearningRow>
@@ -114,10 +116,20 @@ const About = () => {
                 <LogoImage src={HarvardLogo}/>
               </Logo>
               <LearningCopy>
-                I hold a certificate of completion of CS50x from Harvard
+                Holds a certificate of completion of CS50x from Harvard
               </LearningCopy>
             </LearningRow>
-            
+            <Greeting>
+              <strong>And I'm still learning...</strong>
+            </Greeting>
+            <LearningRow>
+              <Logo>
+                <LogoImage src={StanfordLogo} style={{ width: '95%' }}/>
+              </Logo>
+              <LearningCopy>
+                Currently enrolled in the Machine Learning Specialization through Stanford and DeepLearning.AI, taught by Andrew Ng
+              </LearningCopy>
+            </LearningRow>
             <Copy>
               Come along and check out what web technologies I like working with!
             </Copy>
