@@ -18,13 +18,20 @@ const ContactContainer = styled.div`
   align-items: center;
 `
 
+const LogoLink = styled.a`
+  color: var(--primary),
+  text-decoration: none,
+  text-align: center,
+  width: 100%
+`
+
 const Logo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
-  padding: 2px;
+  padding: 9px;
   border-radius: 100%;
 `
 
@@ -71,9 +78,9 @@ const Footer = () => {
                 key={`logo${index}`}
                 className="neu-less"
               >
-                <a href={link.url}>
+                <LogoLink href={link.url}>
                   <LogoImage src={link.imgSrc} />
-                </a>
+                </LogoLink>
               </Logo>
             )
 

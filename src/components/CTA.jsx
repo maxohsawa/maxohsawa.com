@@ -12,13 +12,14 @@ const CTA = ({ path, name }) => {
       <NavLink 
         to={path}
         className="active"
-        style={
-          {
-            width: "60vw",
-            padding: "15px",
-            fontSize: "1.2rem"
-          }
-        }
+        style={{
+          color: 'var(--primary)',
+          textDecoration: 'none',
+          padding: "15px",
+          textAlign: 'center',
+          width: "60vw",
+          fontSize: "1.2rem"
+        }}
         >
           {name}
       </NavLink>

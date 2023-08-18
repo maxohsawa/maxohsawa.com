@@ -79,7 +79,14 @@ const Navbar = () => {
                       : isPending
                       ? "pending"
                       : "inactive"
-                    }
+                  }
+                  style={{
+                    color: 'var(--primary)',
+                    textDecoration: 'none',
+                    padding: '8px 12px',
+                    textAlign: 'center',
+                    width: '100%'
+                  }}
                 >
                   {text}
                 </NavLink>
