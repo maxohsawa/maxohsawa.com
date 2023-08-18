@@ -82,17 +82,17 @@ const About = () => {
               <strong>Hey there!</strong>
             </Greeting>
             <Copy>
-              I'm a software engineer with a focus on full stack web development and bringing delightful, accessible, and useful experiences to users.
+              I'm a software engineer with a focus on full stack web development and bringing delightful, accessible, and useful experiences to users. My goal in life is to continually learn, grow, and share!
             </Copy>
             <Greeting>
-              <strong>I've learned a lot...</strong>
+              <strong>I've learned from the best...</strong>
             </Greeting>
             <LearningRow>
               <Logo>
                 <LogoImage src={ColumbiaLogo}/>
               </Logo>
               <LearningCopy>
-                Currently teach with Columbia University Engineering Bootcamps in partnership with EdX
+                Currently teaches with Columbia University Engineering Bootcamps in partnership with EdX
               </LearningCopy>
             </LearningRow>
             <LearningRow>
@@ -116,7 +116,7 @@ const About = () => {
                 <LogoImage src={HarvardLogo}/>
               </Logo>
               <LearningCopy>
-                Holds a certificate of completion of CS50x from Harvard
+                Holds a certificate of completion of CS50x from Harvard taught by legendary instructor David J. Malan
               </LearningCopy>
             </LearningRow>
             <Greeting>
