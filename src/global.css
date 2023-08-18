@@ -45,11 +45,7 @@ body {
 }
 
 a, a:link, a:visited, a:hover, a:active {
-  color: var(--primary);
-  text-decoration: none;
-  padding: 8px 12px;
-  text-align: center;
-  width: 100%
+  
 }
 
 a.active {

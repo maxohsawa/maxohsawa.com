@@ -1,11 +1,15 @@
 import { styled } from 'styled-components'
 import CTA from '../components/CTA'
 import ProfileJpg from '../assets/profile/profile.jpg'
+import LinkSVG from '../assets/icons/link.svg'
+
 import ColumbiaLogo from '../assets/logos/columbia-engineering.svg'
 import MITLogo from '../assets/logos/mit.svg'
 import BrooklynCollegeLogo from '../assets/logos/brooklyn-college.svg'
 import HarvardLogo from '../assets/logos/harvard.svg'
 import StanfordLogo from '../assets/logos/stanford.svg'
+
+
 
 const ProfileFigure = styled.figure`
   display: flex;
@@ -68,6 +72,44 @@ const LearningCopy = styled.p`
   font-size: 1.2rem;
 `
 
+// const StyledLink = styled.a`
+//   & {
+//     margin: 0 0.7rem 0 0;
+//     padding: 0;
+//     text-decoration-color: #0c511d;
+//     text-decoration-thickness: .125rem;
+//     text-underline-offset: 1.5px;
+//   }
+  
+//   &:visited {
+//     color: var(--color-primary);
+//   }
+
+
+// `
+
+const StyledLink = styled.a`
+  & {
+    margin: 0 0.7rem 0 0;
+    padding: 0;
+    text-decoration: none;
+    color: #37563e;
+    font-weight: 400;
+  }
+
+  &:hover {
+    text-decoration: underline;
+
+  }
+`
+
+const LinkIcon = styled.img`
+  width: 0.75rem;
+  height: auto;
+  position: absolute;
+  color: #0c511d;
+`
+
 const About = () => {
   return (
     <>
@@ -100,7 +142,13 @@ const About = () => {
                 <LogoImage src={MITLogo}/>
               </Logo>
               <LearningCopy>
-                Holds a professional MERN Full Stack Development certification from MIT xPRO
+                <span>Holds a professional </span>
+                <StyledLink
+                  href="https://linkedin.com/in/maxohsawa/details/certifications"
+                >
+                  MIT xPRO MERN Full Stack Development Certification
+                  <LinkIcon src={LinkSVG} />
+                </StyledLink>
               </LearningCopy>
             </LearningRow>
             <LearningRow>
@@ -116,7 +164,14 @@ const About = () => {
                 <LogoImage src={HarvardLogo}/>
               </Logo>
               <LearningCopy>
-                Holds a certificate of completion of CS50x from Harvard taught by legendary instructor David J. Malan
+                <span>Holds a </span>
+                <StyledLink
+                  href="https://linkedin.com/in/maxohsawa/details/certifications"
+                >
+                  Harvard CS50x Certificate
+                  <LinkIcon src={LinkSVG} />
+                </StyledLink>
+                <span>, a course taught by legendary instructor David J. Malan</span>
               </LearningCopy>
             </LearningRow>
             <Greeting>
@@ -127,7 +182,14 @@ const About = () => {
                 <LogoImage src={StanfordLogo} style={{ width: '95%' }}/>
               </Logo>
               <LearningCopy>
-                Currently enrolled in the Machine Learning Specialization through Stanford and DeepLearning.AI, taught by Andrew Ng
+                <span>Currently enrolled in the Stanford </span>
+                <StyledLink
+                  href="https://www.coursera.org/specializations/machine-learning-introduction"
+                >
+                  Machine Learning Specialization
+                  <LinkIcon src={LinkSVG} />
+                </StyledLink>
+                <span> offered in partnership with DeepLearning.AI and taught by Andrew Ng</span>
               </LearningCopy>
             </LearningRow>
             <Copy>
