@@ -4,6 +4,8 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import ScrollToTop from '../components/ScrollToTop'
 
+import '../root.css'
+
 const Main = styled.main`
   display: flex;
   flex-direction: column;
