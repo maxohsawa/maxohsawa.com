@@ -5,7 +5,6 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 
-import './reset.css'
 import './global.css'
 
 import Root from './routes/root'

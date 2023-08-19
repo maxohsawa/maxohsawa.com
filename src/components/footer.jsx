@@ -18,25 +18,30 @@ const ContactContainer = styled.div`
   align-items: center;
 `
 
-const LogoLink = styled.a`
-  color: var(--primary),
-  text-decoration: none,
-  text-align: center,
-  width: 100%
-`
-
 const Logo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
-  padding: 9px;
   border-radius: 100%;
 `
 
+const LogoLink = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary),
+  text-decoration: none,
+  text-align: center,
+  width: 50px;
+  height: 50px;
+  padding: 9px;
+`
+
 const LogoImage = styled.img`
-  width: 100%;
+  width: 90%;
+  height: 90%;
 `
 
 const CopyrightContainer = styled.div`
