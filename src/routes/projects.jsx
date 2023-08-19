@@ -42,13 +42,6 @@ const projects = [
     img: ComingSoonPlaceholder,
     link: 'https://www.potluck.network',
     repo: 'https://github.com/maxohsawa/potluck'
-  },
-  {
-    header: 'ShareCal',
-    copy: 'A real-time collaborative calendar utilizing React, Node, MongoDB, and WebSockets',
-    img: ComingSoonPlaceholder,
-    link: 'https://google.com',
-    repo: 'https://github.com/maxohsawa/sharecal'
   }
 ]
 
