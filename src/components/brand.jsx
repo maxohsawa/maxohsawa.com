@@ -13,9 +13,7 @@ const Brand = () => {
     font-size: 3rem;
     font-weight: bold;
     margin: 45px 0;
-    @media (min-width: 1025px) {
-      font-size: 3rem;
-    }
+
   `
 
   return (
