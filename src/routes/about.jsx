@@ -35,8 +35,9 @@ const CopyContainer = styled.div`
 `
 const Greeting = styled.p`
   margin: 20px 0 10px 0;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: bold;
+  line-height: 2.1rem;
 `
 
 const Copy = styled.p`
