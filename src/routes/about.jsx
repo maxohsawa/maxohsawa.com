@@ -153,7 +153,7 @@ const About = () => {
                   Harvard CS50x Certificate
 
                 </StyledLink>
-                <span>, a course taught by legendary instructor David J. Malan</span>
+                <span> taught by legendary instructor David J. Malan</span>
               </LearningCopy>
             </LearningRow>
             <Greeting>
