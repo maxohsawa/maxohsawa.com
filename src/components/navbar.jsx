@@ -21,7 +21,7 @@ const links = [
 ];
 
 const NavContainer = styled.nav`
-  margin-top: 20px;
+
 `
 
 const NavList = styled.ul`

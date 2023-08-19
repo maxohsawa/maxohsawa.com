@@ -41,7 +41,6 @@ body {
   background-color: var(--bg-primary);
   font-family: 'Inter';
   color: var(--primary);
-  padding: 10px;
   line-height: 1.6rem;
   
 }

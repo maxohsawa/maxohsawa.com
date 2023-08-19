@@ -35,15 +35,14 @@ const CopyContainer = styled.div`
 `
 const Greeting = styled.p`
   margin: 20px 0 10px 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 2.1rem;
 `
 
 const Copy = styled.p`
   margin: 10px 0;
-  width: auto;
-  font-size: 1.2rem;
+  width: 20rem;
 `
 
 const LearningRow = styled.div`
@@ -70,7 +69,6 @@ const LearningCopy = styled.p`
   width: 70vw;
   height: auto;
   margin-left: 15px;
-  font-size: 1.2rem;
 `
 
 // const StyledLink = styled.a`
