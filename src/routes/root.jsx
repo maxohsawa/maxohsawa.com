@@ -5,7 +5,6 @@ import Footer from '../components/footer'
 import ScrollToTop from '../components/ScrollToTop'
 
 const Main = styled.main`
-  min-height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: center;
