@@ -28,6 +28,7 @@
   --neu-shadow: -3px -3px 5px rgba(239, 237, 230, 0.5), 3px 3px 5px rgba(53, 50, 55, 0.5);
   --neu-less: -1px -1px 4px rgba(239, 255, 255, 0.5), 1px 1px 4px rgba(53, 50, 55, 0.5);
   --neu-border: 2px solid rgba(123, 118, 108, 0.2);
+  font-size: 16px;
 }
 
 * {
@@ -41,6 +42,7 @@ body {
   font-family: 'Inter';
   color: var(--primary);
   padding: 10px;
+  line-height: 1.6rem;
   
 }
 
@@ -75,14 +77,3 @@ li {
   border: var(--neu-border);
 }
 
-.sub-heading {
-  margin-bottom: 10px;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-.copy {
-  margin: 10px 0;
-  width: auto;
-  font-size: 1.2rem;
-}
