@@ -1,5 +1,8 @@
+import { useState, useEffect } from 'react'
 import CTA from '../components/CTA'
 import { styled } from 'styled-components'
+
+import testimonials from '../assets/testimonials/testimonials.json'
 
 const CopyContainer = styled.div`
   padding: 10px 20px;
@@ -8,39 +11,67 @@ const CopyContainer = styled.div`
 `
 
 const CopyHeader = styled.h2`
-
+  text-align: center;
+  margin: 25px 0 5px;
 `
 
 const CopySubHeader = styled.h3`
+  text-align: center;
   padding-left: 5px;
 `
 
 const Copy = styled.p`
   margin: 10px 0;
   width: auto;
-  font-size: 1.2rem;
-  padding-left: 10px;
+  padding: 0 15px;
 `
 
+const TestimonialsContainer = styled.div`
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 18px;
+  `
+  
+  const Testimonial = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 14rem;
+  font-size: 0.9rem; 
+`
 
+const TestimonialNo = styled.p`
+  width: 100%;
+  text-align: right;
+  font-size: 0.8rem;
+`
 
 const Experience = () => {
+
+  const [ currentTestimonial, setTestimonial ] = useState()
+  const [ testimonialNo, setTestimonialNo ] = useState()
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * testimonials.length)
+    setTestimonial(testimonials[randomIndex])
+    setTestimonialNo(randomIndex + 1)
+
+    const testimonialInterval = setInterval(() => {
+      const randomIndex = Math.floor(Math.random() * testimonials.length)
+      setTestimonial(testimonials[randomIndex])
+      setTestimonialNo(randomIndex + 1)
+    }, 5000)
+
+    return () => clearInterval(testimonialInterval)
+  }, [])
+
   return (
     <>
-      <CopyContainer>
-        <CopyHeader>
-          Co-Founder
-        </CopyHeader>
-        <CopySubHeader>
-          FRAiMED.art
-        </CopySubHeader>
-        <CopySubHeader>
-          Drop-shipped Generative AI Art
-        </CopySubHeader>
-        <Copy>
-          As the co-founder of FRAiMED, a generative AI art drop shipping app, I architected the Next.js application and played a major role in building the React frontend and API. With a focus on seamless user experience and aesthetic appeal, I ensured a high level of quality, performance, and interactivity.
-        </Copy>
-      </CopyContainer>
       <CopyContainer>
         <CopyHeader>
           Assistant Instructor
@@ -51,6 +82,16 @@ const Experience = () => {
         <CopySubHeader>
           edX Fullstack Web Development
         </CopySubHeader>
+        <TestimonialsContainer
+          className='neu-less'
+        >
+          <Testimonial>
+            {`"${currentTestimonial}"`}
+          </Testimonial>
+          <TestimonialNo>
+            {`${testimonialNo} out of ${testimonials.length}`}
+          </TestimonialNo>
+        </TestimonialsContainer>
         <Copy>
           As an Assistant Instructor for the Full Stack Web Development Bootcamp through Columbia University on edX, I played a pivotal role in guiding learners through immersive, market-ready learning experiences. With a passion for education and industry expertise, I provided mentorship, facilitated discussions, and contributed to creating a transformative learning environment that empowered individuals to pursue life-changing professional pathways in the tech industry.
         </Copy>
