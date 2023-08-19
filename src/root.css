@@ -28,8 +28,8 @@ User Styles
 :root {
   --bg-primary: #C2BFCF;
   --primary: #353237;
-  --secondary: #7B766C;
-  --tertiary: #ABA597;
+  --secondary: #2c4431;
+  --tertiary: #f6d0c4;
   --quarternary: #C6BDA7;
   --neu-shadow: -3px -3px 5px rgba(239, 237, 230, 0.5), 3px 3px 5px rgba(53, 50, 55, 0.5);
   --neu-less: -1px -1px 4px rgba(239, 255, 255, 0.5), 1px 1px 4px rgba(53, 50, 55, 0.5);
@@ -61,7 +61,42 @@ li {
 }
 
 a, a:link, a:visited, a:hover, a:active {
-  
+  color: var(--secondary);
+  text-decoration: none;
+  color: #37563e;
+  font-weight: 400;
+}
+
+a:hover, a:hover::after {
+  text-decoration: underline;
+}
+
+a.link-about::after {
+  content: "";
+  display: inline-block;
+  background-image: url('icons/link.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  width: 0.7rem;
+  height: 0.7rem;
+  filter: invert(18%) sepia(12%) saturate(1574%) hue-rotate(80deg) brightness(97%) contrast(81%);
+}
+
+a.link-repo {
+  margin-top: 10px;
+}
+
+a.link-repo::after {
+  content: "";
+  display: inline-block;
+  background-image: url('icons/link2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
+  filter: invert(18%) sepia(12%) saturate(1574%) hue-rotate(80deg) brightness(97%) contrast(81%);
+  margin-left: 4px;
 }
 
 a.active {

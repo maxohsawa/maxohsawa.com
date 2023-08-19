@@ -88,25 +88,7 @@ const LearningCopy = styled.p`
 // `
 
 const StyledLink = styled.a`
-  & {
-    margin: 0 0.7rem 0 0;
-    padding: 0;
-    text-decoration: none;
-    color: #37563e;
-    font-weight: 400;
-  }
 
-  &:hover {
-    text-decoration: underline;
-
-  }
-`
-
-const LinkIcon = styled.img`
-  width: 0.75rem;
-  height: auto;
-  position: absolute;
-  color: #0c511d;
 `
 
 const About = () => {
@@ -143,10 +125,10 @@ const About = () => {
               <LearningCopy>
                 <span>Holds a professional </span>
                 <StyledLink
-                  href="https://linkedin.com/in/maxohsawa/details/certifications"
+                  className='link-about'
+                  href='https://linkedin.com/in/maxohsawa/details/certifications'
                 >
                   MIT xPRO MERN Full Stack Development Certification
-                  <LinkIcon src={LinkSVG} />
                 </StyledLink>
               </LearningCopy>
             </LearningRow>
@@ -165,10 +147,11 @@ const About = () => {
               <LearningCopy>
                 <span>Holds a </span>
                 <StyledLink
-                  href="https://linkedin.com/in/maxohsawa/details/certifications"
+                  className='link-about'
+                  href='https://linkedin.com/in/maxohsawa/details/certifications'
                 >
                   Harvard CS50x Certificate
-                  <LinkIcon src={LinkSVG} />
+
                 </StyledLink>
                 <span>, a course taught by legendary instructor David J. Malan</span>
               </LearningCopy>
@@ -183,10 +166,10 @@ const About = () => {
               <LearningCopy>
                 <span>Currently enrolled in the Stanford </span>
                 <StyledLink
+                  className='link-about'
                   href="https://www.coursera.org/specializations/machine-learning-introduction"
                 >
                   Machine Learning Specialization
-                  <LinkIcon src={LinkSVG} />
                 </StyledLink>
                 <span> offered in partnership with DeepLearning.AI and taught by Andrew Ng</span>
               </LearningCopy>
