@@ -26,7 +26,7 @@ const CopyContainer = styled.div`
 `
 
 const CopyHeader = styled.h2`
-  margin-bottom: 20px;
+  margin: 30px 0 15px 0;
 `
 
 const Copy = styled.p`
@@ -48,16 +48,17 @@ const LogoContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 65px;
-  height: 80px;
-  border-radius: 8px;
-  margin: 0 10px 30px 0;
+  height: auto;
+  border-radius: 6px;
+  margin: 4px;
+  padding: 6px 4px 2px 4px;
   background-color: rgba(255, 255, 255, 0.3);
 `
   
 const Logo = styled.img`
   width: 50px;
   height: 50px;
-  border-radius: 12px;
+  border-radius: 18px;
 `
 
 const Label = styled.p`
