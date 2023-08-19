@@ -126,7 +126,7 @@ const About = () => {
                 <span>Holds a professional </span>
                 <StyledLink
                   className='link-about'
-                  href='https://linkedin.com/in/maxohsawa/details/certifications'
+                  href='https://certificates.emeritus.org/bff24952-d42a-4954-8a58-9c9dff862af9'
                 >
                   MIT xPRO MERN Full Stack Development Certification
                 </StyledLink>
@@ -148,7 +148,7 @@ const About = () => {
                 <span>Holds a </span>
                 <StyledLink
                   className='link-about'
-                  href='https://linkedin.com/in/maxohsawa/details/certifications'
+                  href='https://certificates.cs50.io/b954b64a-cea6-497b-a610-e33b94108a67.png?size=letter'
                 >
                   Harvard CS50x Certificate
 
