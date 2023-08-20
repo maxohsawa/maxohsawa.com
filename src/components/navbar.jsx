@@ -35,6 +35,10 @@ const NavListItem = styled.li`
   display: flex;
   justify-content: center;
   margin: 0 5px;
+
+  @media screen and (min-width: 481px) {
+    margin: 0 10px;
+  }
 `
 
 // https://reactrouter.com/en/main/start/tutorial#active-link-styling
@@ -51,18 +55,11 @@ const Navbar = () => {
                   to={path}
                   className={({ isActive, isPending }) =>
                     isActive
-                      ? "active"
+                      ? "nav-link active"
                       : isPending
-                      ? "pending"
-                      : "inactive"
+                      ? "nav-link pending"
+                      : "nav-link inactive"
                   }
-                  style={{
-                    color: 'var(--primary)',
-                    textDecoration: 'none',
-                    padding: '8px 12px',
-                    textAlign: 'center',
-                    width: '100%'
-                  }}
                 >
                   {text}
                 </NavLink>

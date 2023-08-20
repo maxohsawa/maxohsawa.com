@@ -24,8 +24,8 @@ const CopyHeader = styled.h2`
 const Copy = styled.p`
   margin: 10px 0;
   width: auto;
-  font-size: 1.2rem;
   padding-left: 10px;
+  text-align: center;
 `
 
 const ImageContainer = styled.div`
@@ -41,7 +41,7 @@ const ProjectAnchor = styled.a`
 
 const ProjectImage = styled.img`
   width: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
 `
 
 const Project = ({ header, copy, img, link, repo }) => {
@@ -51,6 +51,7 @@ const Project = ({ header, copy, img, link, repo }) => {
         <CopyContainer>
           <ProjectAnchor 
             href={link}
+            className='project-header'
           >
             <CopyHeader>
               {header}

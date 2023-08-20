@@ -7,7 +7,8 @@ const Header = () => {
   const HeaderContainer = styled.header`
     display: flex;
     flex-direction: column;
-    width: auto;    
+    width: 100%;
+    margin: 0 auto;
   `
 
   return (

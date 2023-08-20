@@ -4,6 +4,11 @@ import { styled } from 'styled-components'
 const NavLinkItem = styled.div`
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 481px) {
+    max-width: 254px;
+  }
+
 `
 
 const CTA = ({ path, name }) => {
@@ -11,16 +16,8 @@ const CTA = ({ path, name }) => {
     <NavLinkItem>
       <NavLink 
         to={path}
-        className="active"
-        style={{
-          color: 'var(--primary)',
-          textDecoration: 'none',
-          padding: "15px",
-          textAlign: 'center',
-          width: "60vw",
-          fontSize: "1.2rem"
-        }}
-        >
+        className="active call-to-action"
+      >
           {name}
       </NavLink>
     </NavLinkItem>

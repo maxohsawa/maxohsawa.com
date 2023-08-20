@@ -3,7 +3,7 @@ import { styled } from 'styled-components'
 const Brand = () => {
 
   const ProfileContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     
@@ -13,7 +13,12 @@ const Brand = () => {
     font-size: 3rem;
     font-weight: bold;
     margin: 45px 0;
+    color: var(--secondary);
 
+    @media screen and (min-width: 481px) {
+      font-size: 3.5rem;
+      margin: 60px 0;
+    }
   `
 
   return (
