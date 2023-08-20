@@ -42,7 +42,6 @@ const Greeting = styled.p`
 
 const Copy = styled.p`
   margin: 10px 0;
-  width: 20rem;
 `
 
 const LearningRow = styled.div`
@@ -161,7 +160,7 @@ const About = () => {
             </Greeting>
             <LearningRow>
               <Logo>
-                <LogoImage src={StanfordLogo} style={{ width: '95%' }}/>
+                <LogoImage src={StanfordLogo} style={{ width: '70%' }}/>
               </Logo>
               <LearningCopy>
                 <span>Currently enrolled in the Stanford </span>

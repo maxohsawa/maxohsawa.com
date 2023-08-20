@@ -34,7 +34,6 @@ User Styles
   --neu-shadow: -3px -3px 5px rgba(239, 237, 230, 0.5), 3px 3px 5px rgba(53, 50, 55, 0.5);
   --neu-less: -1px -1px 4px rgba(239, 255, 255, 0.5), 1px 1px 4px rgba(53, 50, 55, 0.5);
   --neu-border: 2px solid rgba(123, 118, 108, 0.2);
-  font-size: 16px;
 }
 
 * {
@@ -47,8 +46,13 @@ body {
   background-color: var(--bg-primary);
   font-family: 'Inter';
   color: var(--primary);
+  font-size: 16px;
   line-height: 1.6rem;
-  
+
+  @media screen and (min-width: 481px) {
+    font-size: 20px;
+    line-height: 2rem;
+  }  
 }
 
 ul {
@@ -61,14 +65,16 @@ li {
 }
 
 a, a:link, a:visited, a:hover, a:active {
-  color: var(--secondary);
   text-decoration: none;
-  color: #37563e;
   font-weight: 400;
 }
 
 a:hover, a:hover::after {
   text-decoration: underline;
+}
+
+a.link-about, a.link-about:link, a.link-about:visited, a.link-about:hover, a.link-about:active {
+  color: var(--secondary);
 }
 
 a.link-about::after {
@@ -77,13 +83,23 @@ a.link-about::after {
   background-image: url('./assets/icons/link.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  color: var(--secondary);
   transform: translateY(-50%);
   width: 0.7rem;
   height: 0.7rem;
   filter: invert(18%) sepia(12%) saturate(1574%) hue-rotate(80deg) brightness(97%) contrast(81%);
 }
 
+a.project-header, a.project-header:link, a.project-header:visited, a.project-header:hover, a.project-header:active {
+  color: var(--secondary);
+}
+
+a.link-repo, a.link-repo:link, a.link-repo:visited, a.link-repo:hover, a.link-repo:active {
+  color: var(--secondary);
+}
+
 a.link-repo {
+  color: var(--secondary);
   margin-top: 10px;
 }
 
@@ -93,6 +109,7 @@ a.link-repo::after {
   background-image: url('./assets/icons/link2.png');
   background-size: contain;
   background-repeat: no-repeat;
+  color: var(--secondary);
   width: 1rem;
   height: 1rem;
   filter: invert(18%) sepia(12%) saturate(1574%) hue-rotate(80deg) brightness(97%) contrast(81%);
@@ -122,3 +139,15 @@ a.inactive {
   border: var(--neu-border);
 }
 
+.call-to-action {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  width: 50vw;
+  font-size: 1.1rem;
+
+  @media screen and (min-width: 481px) {
+    font-size: 1.6rem;
+  }
+}

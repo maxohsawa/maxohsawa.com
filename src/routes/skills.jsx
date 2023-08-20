@@ -19,7 +19,6 @@ import CPPLogo from '../assets/logos/C++.svg'
 import GitLogo from '../assets/logos/git.svg'
 
 const CopyContainer = styled.div`
-  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +26,10 @@ const CopyContainer = styled.div`
 
 const CopyHeader = styled.h2`
   margin: 30px 0 15px 0;
+
+  @media screen and (min-width: 481px) {
+    margin: 60px 0 25px 0;
+  }
 `
 
 const Copy = styled.p`
@@ -38,7 +41,7 @@ const Copy = styled.p`
 
 const LogosContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 `
 
@@ -53,6 +56,13 @@ const LogoContainer = styled.div`
   margin: 4px;
   padding: 6px 4px 2px 4px;
   background-color: rgba(255, 255, 255, 0.3);
+
+  @media screen and (min-width: 481px) {
+    margin: 0 10px;
+    padding: 15px 0 5px 0;
+    width: 100px;
+
+  }
 `
   
 const Logo = styled.img`

@@ -5,16 +5,15 @@ import TwitterLogo from '../assets/logos/twitter.svg'
 import DiscordLogo from '../assets/logos/discord.svg'
 
 const Section = styled.footer`
-  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 20px;
+  margin: 30px 0;
 `
 
 const ContactContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 `
 
@@ -25,6 +24,11 @@ const Logo = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 100%;
+  margin: 0 15px;
+
+  @media screen and (min-width: 481px) {
+    margin: 0 25px;
+  }
 `
 
 const LogoLink = styled.a`
@@ -45,7 +49,7 @@ const LogoImage = styled.img`
 `
 
 const CopyrightContainer = styled.div`
-  margin-top: 20px;
+  margin: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;

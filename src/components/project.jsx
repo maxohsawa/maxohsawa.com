@@ -51,6 +51,7 @@ const Project = ({ header, copy, img, link, repo }) => {
         <CopyContainer>
           <ProjectAnchor 
             href={link}
+            className='project-header'
           >
             <CopyHeader>
               {header}
