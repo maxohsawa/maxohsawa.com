@@ -18,6 +18,7 @@ const Copy = styled.p`
   margin: 10px 0;
   width: auto;
   padding-left: 10px;
+  text-align: center;
 `
 
 const projects = [
