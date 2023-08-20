@@ -16,8 +16,8 @@ const Brand = () => {
     color: var(--secondary);
 
     @media screen and (min-width: 481px) {
-      font-size: 4.2rem;
-      margin: 75px 0;
+      font-size: 3.5rem;
+      margin: 60px 0;
     }
   `
 

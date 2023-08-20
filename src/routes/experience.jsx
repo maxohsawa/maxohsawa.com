@@ -19,6 +19,7 @@ const CopyHeader = styled.h2`
 const CopySubHeader = styled.h3`
   text-align: center;
   padding-left: 5px;
+  color: var(--secondary);
 `
 
 const Copy = styled.p`
@@ -38,6 +39,10 @@ const TestimonialsContainer = styled.div`
   border-radius: 18px;
 
   @media screen and (min-width: 481px) {
+    
+  }
+  
+  @media screen and (min-width: 769px) {
     padding: 20px 35px;
   }
   `
@@ -48,9 +53,15 @@ const TestimonialsContainer = styled.div`
   align-items: center;
   min-height: 14rem;
   font-size: 0.9rem; 
+  line-height: 1.3rem;
 
   @media screen and (min-width: 481px) {
-    font-size: 1.2rem;
+    
+  }
+  
+  @media screen and (min-width: 769px) {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
     min-height: 18rem;
   }
 `
@@ -61,12 +72,16 @@ const TestimonialNo = styled.p`
   font-size: 0.9rem;
 
   @media screen and (min-width: 481px) {
+    
+  }
+  
+  @media screen and (min-width: 769px) {
     font-size: 1.1rem;
   }
 `
 
 const CTACopy = styled.p`
-  margin: 50px 50px 10px 50px;
+  margin: 50px 30px 10px 30px;
   text-align: center;
 `
 

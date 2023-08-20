@@ -58,10 +58,14 @@ const LogoContainer = styled.div`
   background-color: rgba(255, 255, 255, 0.3);
 
   @media screen and (min-width: 481px) {
+    width: 75px;
+
+  }
+  
+  @media screen and (min-width: 769px) {
     margin: 0 10px;
     padding: 15px 0 5px 0;
     width: 100px;
-
   }
 `
   
@@ -81,6 +85,10 @@ const Label = styled.p`
   margin-top: 4px;
 
   @media screen and (min-width: 481px) {
+    font-size: 0.8rem;
+  }
+  
+  @media screen and (min-width: 769px) {
     font-size: 1rem;
   }
 `

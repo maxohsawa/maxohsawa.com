@@ -37,7 +37,7 @@ const NavListItem = styled.li`
   margin: 0 5px;
 
   @media screen and (min-width: 481px) {
-    margin: 0 15px;
+    margin: 0 10px;
   }
 `
 
@@ -55,18 +55,11 @@ const Navbar = () => {
                   to={path}
                   className={({ isActive, isPending }) =>
                     isActive
-                      ? "active"
+                      ? "nav-link active"
                       : isPending
-                      ? "pending"
-                      : "inactive"
+                      ? "nav-link pending"
+                      : "nav-link inactive"
                   }
-                  style={{
-                    color: 'var(--secondary)',
-                    textDecoration: 'none',
-                    padding: '8px 12px',
-                    textAlign: 'center',
-                    width: '100%'
-                  }}
                 >
                   {text}
                 </NavLink>

@@ -51,8 +51,8 @@ body {
   line-height: 1.6rem;
 
   @media screen and (min-width: 481px) {
-    font-size: 1.4rem;
-    line-height: 2.3rem;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
   }  
 }
 
@@ -72,6 +72,18 @@ a, a:link, a:visited, a:hover, a:active {
 
 a:hover, a:hover::after {
   text-decoration: underline;
+}
+
+a.nav-link, a.nav-link:link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
+  color: var(--secondary);
+  text-decoration: none;
+  padding: 8px 12px;
+  text-align: center;
+  width: 100%;
+  
+  @media screen and (min-width: 481px) {
+    font-size: 1.2rem;
+  }
 }
 
 a.link-about, a.link-about:link, a.link-about:visited, a.link-about:hover, a.link-about:active {
