@@ -69,11 +69,25 @@ const Logo = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 18px;
+
+  @media screen and (min-width: 481px) {
+    width: 60px;
+    height: 60px;
+  }
 `
 
 const Label = styled.p`
   font-size: 0.7rem;
   margin-top: 4px;
+
+  @media screen and (min-width: 481px) {
+    font-size: 1rem;
+  }
+`
+
+const CTACopy = styled.p`
+  margin: 50px 50px 10px 50px;
+  text-align: center;
 `
 
 const Skills = () => {
@@ -171,9 +185,9 @@ const Skills = () => {
         </LogosContainer>
       </CopyContainer>
       <CopyContainer>
-        <Copy>
+        <CTACopy>
           Check out some of the projects I've been working on!
-        </Copy>
+        </CTACopy>
       </CopyContainer>
       <CTA path='/projects' name='Projects' />
     </>

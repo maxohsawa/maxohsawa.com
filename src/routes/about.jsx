@@ -70,21 +70,10 @@ const LearningCopy = styled.p`
   margin-left: 15px;
 `
 
-// const StyledLink = styled.a`
-//   & {
-//     margin: 0 0.7rem 0 0;
-//     padding: 0;
-//     text-decoration-color: #0c511d;
-//     text-decoration-thickness: .125rem;
-//     text-underline-offset: 1.5px;
-//   }
+const CTACopy = styled.p`
+  margin: 30px 30px 10px 30px;
   
-//   &:visited {
-//     color: var(--color-primary);
-//   }
-
-
-// `
+`
 
 const StyledLink = styled.a`
 
@@ -173,9 +162,9 @@ const About = () => {
                 <span> offered in partnership with DeepLearning.AI and taught by Andrew Ng</span>
               </LearningCopy>
             </LearningRow>
-            <Copy>
+            <CTACopy>
               Come along and check out what web technologies I like working with!
-            </Copy>
+            </CTACopy>
           </CopyContainer>
           <CTA path='/skills' name='Skills' />
     </>
