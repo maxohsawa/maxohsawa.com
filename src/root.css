@@ -34,6 +34,7 @@ User Styles
   --neu-shadow: -3px -3px 5px rgba(239, 237, 230, 0.5), 3px 3px 5px rgba(53, 50, 55, 0.5);
   --neu-less: -1px -1px 4px rgba(239, 255, 255, 0.5), 1px 1px 4px rgba(53, 50, 55, 0.5);
   --neu-border: 2px solid rgba(123, 118, 108, 0.2);
+  font-size: 16px;
 }
 
 * {
@@ -46,12 +47,12 @@ body {
   background-color: var(--bg-primary);
   font-family: 'Inter';
   color: var(--primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6rem;
 
   @media screen and (min-width: 481px) {
-    font-size: 20px;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
   }  
 }
 
@@ -140,7 +141,7 @@ a.inactive {
 }
 
 .call-to-action {
-  color: var(--primary);
+  color: var(--secondary);
   text-decoration: none;
   padding: 15px;
   text-align: center;

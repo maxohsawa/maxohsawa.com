@@ -8,6 +8,7 @@ const CopyContainer = styled.div`
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `
 
 const CopyHeader = styled.h2`
@@ -28,13 +29,17 @@ const Copy = styled.p`
 
 const TestimonialsContainer = styled.div`
   margin: 20px 0;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   border-radius: 18px;
+
+  @media screen and (min-width: 481px) {
+    padding: 20px 35px;
+  }
   `
   
   const Testimonial = styled.p`
@@ -43,12 +48,26 @@ const TestimonialsContainer = styled.div`
   align-items: center;
   min-height: 14rem;
   font-size: 0.9rem; 
+
+  @media screen and (min-width: 481px) {
+    font-size: 1.2rem;
+    min-height: 18rem;
+  }
 `
 
 const TestimonialNo = styled.p`
   width: 100%;
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+
+  @media screen and (min-width: 481px) {
+    font-size: 1.1rem;
+  }
+`
+
+const CTACopy = styled.p`
+  margin: 50px 50px 10px 50px;
+  text-align: center;
 `
 
 const Experience = () => {
@@ -104,14 +123,14 @@ const Experience = () => {
           Various Side Projects
         </CopySubHeader>
         <Copy>
-        As a fledgling software engineer, I gained valuable experience working on full stack side projects that utilized React, Node, and MongoDB. One of these projects was Dotodo, a microblogging social media app akin to Twitter but with an integrated todo list feature, emphasizing users' current tasks. I also contributed to Potluck, a social media app designed to organize potluck dinner hosts and guests, with future plans to expand into other communal host-guest projects. Additionally, I worked on ShareCal, a real-time shared calendar application that utilized websockets for collaboration, enabling users to synchronize schedules seamlessly. These experiences enhanced my skills in web development and solidified my passion for full stack engineering.
+          As a fledgling software engineer, I gained valuable experience working on full stack side projects that utilized React, Node, and MongoDB. One of these projects was Dotodo, a microblogging social media app akin to Twitter but with an integrated todo list feature, emphasizing users' current tasks. I also contributed to Potluck, a social media app designed to organize potluck dinner hosts and guests, with future plans to expand into other communal host-guest projects. Additionally, I worked on ShareCal, a real-time shared calendar application that utilized websockets for collaboration, enabling users to synchronize schedules seamlessly. These experiences enhanced my skills in web development and solidified my passion for full stack engineering.
         </Copy>
       </CopyContainer>
 
       <CopyContainer>
-        <Copy>
+        <CTACopy>
           If you think I would be a good fit for your team, or you would like to collaborate with me, please find me on LinkedIn, Github, and / or Twitter!
-        </Copy>
+        </CTACopy>
       </CopyContainer>
       <CTA path='/' name='About' />
     </>

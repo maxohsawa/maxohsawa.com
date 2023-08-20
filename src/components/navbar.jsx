@@ -61,7 +61,7 @@ const Navbar = () => {
                       : "inactive"
                   }
                   style={{
-                    color: 'var(--primary)',
+                    color: 'var(--secondary)',
                     textDecoration: 'none',
                     padding: '8px 12px',
                     textAlign: 'center',

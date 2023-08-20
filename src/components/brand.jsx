@@ -13,10 +13,11 @@ const Brand = () => {
     font-size: 3rem;
     font-weight: bold;
     margin: 45px 0;
+    color: var(--secondary);
 
     @media screen and (min-width: 481px) {
-      font-size: 4rem;
-      margin: 60px 0;
+      font-size: 4.2rem;
+      margin: 75px 0;
     }
   `
 
